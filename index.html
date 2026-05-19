@@ -12,19 +12,19 @@
         <h1>Your To-Do List</h1>
     </div>
 
+    <div class = "minimalist-card2">
+        <input id = "name" type = "text" placeholder="Task">  </input><br><br>
+        <input id = "desc" type = "text" placeholder="Description">  </input><br><br>
+
+        <button id = "button" class = "button"> Add Task</button>
+    </div>
     <div class = "columns">
         <div class = "card">
             <div class = "card-header">
                 <h3> Incomplete Tasks </h3>
             </div>
-            <div class = "card-body">
-                <div class = "tasks">
-                    Complete Task on Micromanaging Homework
-                    <button class ="done">Done</button>
-                </div>
-                <button class = "add">
-                    Add Tasks
-                </button>
+            <div class = "card-body" id = "incomplete-tasks">
+
             </div>
 
         </div>
@@ -33,10 +33,7 @@
             <div class = "card-header">
                 <h3> Completed Tasks </h3>
             </div>
-            <div class = "card-body">
-                <div class = "tasks">
-                    Complete Task on Micromanaging Homework
-                </div>
+            <div class = "card-body" id = "complete-tasks">
 
             </div>
 
