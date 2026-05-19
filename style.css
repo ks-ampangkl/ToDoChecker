@@ -1,0 +1,144 @@
+.minimalist-card{
+    background-color: rgb(21, 146, 255);
+    border: 1px solid white;
+    border-radius: 16px;
+    padding:24px;
+    box-shadow: 0px 1px 2px 4px rgb(0, 0, 0),
+                0px 1px 2px 4px rgb(0, 0, 0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    color:white
+}
+
+.minimalist-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 1px 2px 3px rgb(177, 177, 184),
+                0px 1px 2px 3px rgb(175, 175, 188);
+
+}
+
+h1{
+    font-family: Verdana;
+    font-size: 2rem;
+}
+
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap :20px;
+}
+
+
+
+.card{
+
+    height: 350px;
+    border: 3px solid white;
+    border-radius: 45px;
+    box-shadow: 1px 2px 3px;
+    margin:20px;
+
+    overflow:hidden; /*chops off sharp corners of blue header*/
+
+    display:flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 3px grey
+                1px 2px 3px grey;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.card-header{
+    height: 75px;
+    background-color: rgb(21,146,255);
+
+    border-bottom: 2px solid black;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 1px 2px 3px black
+                1px 2px 3px black;
+}
+
+.card-body{
+    flex:1;
+    background-color: white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position:relative; 
+}
+
+.card-body .add{
+    position:absolute; /*pull button out of normal layout flow*/
+    bottom: 20px;
+    right: 20px;
+
+    background-color: rgb(21,146,255);
+    border-radius: 20px;
+    font-family: Verdana;
+    color: white;
+    cursor: pointer;
+}
+
+.card-body .add:active{
+    background-color: aliceblue;
+    color:black;
+}
+h3{
+    font-family: Verdana;
+    color:white;
+}
+
+.add{
+    display:flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+.tasks{
+    position:absolute;
+    height: 100px;
+
+    background-color: rgb(227, 201, 201);
+    top:20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: Verdana;
+    color: black;
+    font-size: 1rem;
+    text-align: top;
+
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-bottom: 15px; /* it wont touch the edge of pink box*/
+
+   box-sizing: border-box;
+
+   box-shadow: 1px 20px 3px grey;
+}
+
+.tasks .done{
+    position: absolute;
+    font-family: Verdana;
+    color: white;
+    background-color: rgb(21,146,255);
+    border-radius: 20px;
+    bottom: 7px;
+    right: 20px;
+}
+
+.tasks .done:active{
+    background-color: aliceblue;
+    color: black;
+}
